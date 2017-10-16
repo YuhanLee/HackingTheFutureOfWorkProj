@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Graph Generator</title>
+<link rel="stylesheet" href="style.css">
+<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="functions4.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.js"></script>
+</head>
+<body>
+	<ul id="nav">
+	  <li><a href="index.html">Home</a></li>
+	  <li><a href="index2.html">General Effect</a></li>
+	  <li><a href="index3.html">Customize (Medium Sized Company)</a></li>
+	  <li><a class="active" href="index4.html">Customize (Large Sized Company)</a></li>
+	  <li><a href="index5.html">Model your Data</a></li>
+	</ul>
+<form id="inputForm" class="container">
+  <h3>Graph Data Inputs</h3>
+  <div id="inputContainer">
+	  <div>	
+		  Number of Employees: <input type="text" name="numberOfEmployees"> 
+		  NOC #: <input type="text"  name="NOC#"> 
+		  Salary: <input type="text" name="Salary">
+	  </div>
+  </div>
+  <div class="btn-toolbar">
+  <button id="addRow" class="btn btn-info" type="button">Add</button> 
+  <button id="submit" class="btn btn-info" type="button">Submit</button>
+  </div>
+</form>
+
+
+<canvas id="chart">
+	
+
+</canvas>
+<br>
+<br>
+<canvas id="salaryChart">
+	
+
+</canvas>
+</body>
+</html>

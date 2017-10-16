@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+    
+<title>Chart Generator</title>
+<link rel="stylesheet" href="style.css">
+<script type="text/javascript" src="jquery-3.2.1.js"></script>
+<script type="text/javascript" src="jquery-ui.js"></script>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="/resources/demos/style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script type="text/javascript" src="functions3.js"></script>
+<script type="text/javascript" src="Chart.js"></script>
+
+<script type="text/javascript" src="dataOperations.js"></script>
+
+            
+<style>
+ 
+#chartdiv {
+    margin: auto;
+height: 500px;
+width: 1000px;
+}
+     #chart2 {width: 49%; float: left;display: inline-block;margin:1px;
+    width:750px; height:500px;}
+    #chartfuture {width: 49%; float: right;display: inline-block;margin:1px; 
+    width:800px; height:500px;}
+    h1 {
+        text-align: center;
+    }
+</style>
+</head>
+    <body>
+    <ul id="nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index2.html">General Effect</a></li>
+      <li><a class="active" href="index3.html">Customize (Medium Sized Company)</a></li>
+      <li><a href="index4.html">Customize (Large Sized Company)</a></li>
+      <li><a href="index5.html">Model your Data</a></li>
+    </ul>
+        <h1>
+            Estimated Labour cost Prediction by Occupation (10-20years)
+        </h1>
+    <form>
+            <div class="ui-widget container">
+  <label for="tags">Occupation: </label>
+  <input id="tags" class="form-control" onchange="show()" size="50"> <br/>
+                <div id="hidden" >
+<label for="tags">Number of employees: </label>
+  <input id="employees" class="form-control" size="50"> <br />
+<label for="tags">Average Salary : </label>
+  <input id="salary"  class="form-control" size="50"> <br />
+                </div>
+<button id="button1" class="btn btn-primary" type="button"  onclick="calculate()">Generate graph!</button>
+</div>
+        
+         
+
+        </form>
+         <div id="chartdiv">   <canvas id="chart" class="container" ></canvas></div>
+         
+        
+            <div id='canvas2'>
+           
+            
+             <canvas id="chart2" ></canvas>
+             <canvas id="chartfuture" ></canvas>
+            
+            </div>
+       
+ 
+     
+        <p id="details"></p>
+    <p id="JSON">
+     </p>
+
+
+</body>
+</html>
